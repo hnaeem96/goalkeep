@@ -4,8 +4,8 @@ class SignUp extends Component {
   render() {
     return(
       <div>Sign Up</div>
-    )
+    );
   }
 }
 
-export class SignUp;
+export default SignUp;
