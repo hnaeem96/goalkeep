@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { firebaseApp } from '../firebase';
 
+import AddGoal from './AddGoal'
+
 class App extends Component {
   signOut() {
     firebaseApp.auth().signOut();
@@ -12,7 +14,7 @@ class App extends Component {
       <div>
         <div>
           <h3>Goals</h3>
-          <div>Add Goal</div>
+          <AddGoal />
           <div>Goal List</div>
         </div>
         <button
