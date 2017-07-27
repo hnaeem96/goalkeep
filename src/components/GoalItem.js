@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { goalRef, completeGoalRef } from '../firebase';
+import { goalRef, completeGoalRef, deleteGoalRef } from '../firebase';
 
 class GoalItem extends Component {
   constructor(props) {
@@ -12,19 +12,20 @@ class GoalItem extends Component {
 
   completeGoal() {
     const { email, title, serverKey } = this.props.goal;
-    const { userEmail } = this.props.user;
-    if (email === this.props.user.email) {
       completeGoalRef.push({email, title});
       goalRef.child(serverKey).remove();
-    } else {
-      this.setState({error: "This goal hasn't been made by you!"});
-    }
   };
 
   copyGoal() {
     const { email } = this.props.user;
     const { title } = this.props.goal;
     goalRef.push({email, title});
+  }
+
+  deleteGoal() {
+    const { email, title, serverKey } = this.props.goal;
+      deleteGoalRef.push({email, title});
+      goalRef.child(serverKey).remove();
   }
 
   render() {
@@ -34,9 +35,11 @@ class GoalItem extends Component {
       <div>
         <strong>{title}</strong>
         <span>made by <em>{email}</em></span>
+        <button>Like</button>
+        <span>{}</span>
         {
           (email === this.props.user.email) ?
-          <span>
+          <div>
             <button
               className="btn"
               onClick={() => this.completeGoal()}
@@ -45,16 +48,19 @@ class GoalItem extends Component {
             </button>
             <button
               className="btn"
+              onClick={() => this.deleteGoal()}
             >
                 Delete
             </button>
-          </span> :
-          <button
-            className="btn"
-            onClick={() => this.copyGoal()}
-          >
-                Copy Goal
-          </button>
+          </div> :
+          <div>
+            <button
+              className="btn"
+              onClick={() => this.copyGoal()}
+            >
+                  Copy Goal
+            </button>
+          </div>
         }
       </div>
     )
