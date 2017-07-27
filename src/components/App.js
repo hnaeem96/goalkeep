@@ -14,10 +14,13 @@ class App extends Component {
     return(
       <div>
         <div>
-          <h3>Goals</h3>
+          <h3>GoalKeep</h3>
           <AddGoal />
+          <hr />
+          <h4>List of Goals</h4>
           <GoalList />
         </div>
+        <hr />
         <button
           className="btn log-out"
           onClick={() => this.signOut()}
