@@ -12,6 +12,7 @@ class GoalItem extends Component {
 
   completeGoal() {
     const { email, title, serverKey } = this.props.goal;
+    const { userEmail } = this.props.user;
     if (email === this.props.user.email) {
       completeGoalRef.push({email, title});
       goalRef.child(serverKey).remove();
@@ -20,6 +21,12 @@ class GoalItem extends Component {
     }
   };
 
+  copyGoal() {
+    const { email } = this.props.user;
+    const { title } = this.props.goal;
+    goalRef.push({email, title});
+  }
+
   render() {
     const { email, title } = this.props.goal;
 
@@ -27,27 +34,27 @@ class GoalItem extends Component {
       <div>
         <strong>{title}</strong>
         <span>made by <em>{email}</em></span>
-        <button
-          className="btn"
-          onClick={() => this.completeGoal()}
-        >
-            Complete
-        </button>
-        <button
-          className="btn"
-        >
-            Delete
-        </button>
         {
-            this.state.error ?
-            <div>
-              {this.state.error}
-              <button onClick={() => this.setState({error: ''})}>
-                Close
-              </button>
-            </div>
-            :
-            null
+          (email === this.props.user.email) ?
+          <span>
+            <button
+              className="btn"
+              onClick={() => this.completeGoal()}
+            >
+                Complete
+            </button>
+            <button
+              className="btn"
+            >
+                Delete
+            </button>
+          </span> :
+          <button
+            className="btn"
+            onClick={() => this.copyGoal()}
+          >
+                Copy Goal
+          </button>
         }
       </div>
     )
