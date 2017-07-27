@@ -38,7 +38,17 @@ class GoalItem extends Component {
         >
             Delete
         </button>
-        <div>{this.state.error}</div>
+        {
+            this.state.error ?
+            <div>
+              {this.state.error}
+              <button onClick={() => this.setState({error: ''})}>
+                Close
+              </button>
+            </div>
+            :
+            null
+        }
       </div>
     )
   }
