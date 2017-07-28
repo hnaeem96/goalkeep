@@ -6,14 +6,20 @@ class AddGoal extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      title: ''
+      title: '',
+      error: 0
     }
   }
 
   addGoal() {
     const { title } = this.state;
     const { email } = this.props.user;
-    goalRef.push({email, title});
+    if (title !== "") {
+      goalRef.push({email, title});
+      this.setState({error: 0});
+    } else {
+      this.setState({error: 1});
+    }
   }
 
   render() {
@@ -34,6 +40,11 @@ class AddGoal extends Component {
               Submit
             </button>
         </div>
+        {
+          this.state.error === 1 ?
+          <div>Goal cannot be empty!</div> :
+          null
+        }
       </div>
     )
   }
