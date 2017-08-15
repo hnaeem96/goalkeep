@@ -1,0 +1,16 @@
+.navbar .container {
+  display: flex;
+  justify-content: space-between; }
+
+.navbar .logo {
+  display: flex;
+  align-items: center; }
+
+.navbar .menu-list {
+  display: flex;
+  align-items: center; }
+  .navbar .menu-list ul {
+    display: flex;
+    justify-content: flex-end; }
+    .navbar .menu-list ul li {
+      padding: 0 2rem; }

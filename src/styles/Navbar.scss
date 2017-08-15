@@ -1,0 +1,25 @@
+.navbar {
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .menu-list {
+    display: flex;
+    align-items: center;
+
+    ul {
+      display: flex;
+      justify-content: flex-end;
+
+      li {
+        padding: 0 2rem;
+      }
+    }
+  }
+}

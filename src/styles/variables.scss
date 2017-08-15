@@ -1,0 +1,22 @@
+//COLORS
+$black: #000;
+$white: #fff;
+
+//FONTS
+$base-font-size: 16px;
+$tablet-font-size: 15px;
+$mobile-font-size: 14px;
+$base-margin: $base-font-size * 1.6;
+
+$font-family: 'Roboto', sans-serif;
+$font-weight-normal: 300;
+$font-weight-medium: 400;
+$font-weight-bold: 600;
+
+//TRANSITIONS
+$transition-time: .2s;
+
+//BREAKPOINTS
+$desktop: 1024px;
+$tablet: 768px;
+$phone: 360px;
