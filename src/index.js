@@ -15,7 +15,6 @@ const store = createStore(reducer);
 
 firebaseApp.auth().onAuthStateChanged(user => {
   if (user) {
-    console.log('user signed in or up', user);
     const { email } = user;
     store.dispatch(logUser(email));
     browserHistory.push('/app');
@@ -27,7 +26,7 @@ firebaseApp.auth().onAuthStateChanged(user => {
 
 ReactDOM.render(
   <Provider store={store}>
-    <Router path="/" history={browserHistory}>
+    <Router path="/" component={SignIn} history={browserHistory}>
       <Route path="/app" component={App} />
       <Route path="/signin" component={SignIn} />
       <Route path="/signup" component={SignUp} />
