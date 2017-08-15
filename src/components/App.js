@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import { firebaseApp } from '../firebase';
+// import { connect } from 'react-redux';
 
 import Navbar from './Navbar';
 import AddGoal from './AddGoal';
@@ -27,8 +26,8 @@ class App extends Component {
   }
 }
 
-function mapStateToProps(state) {
-  return {}
-}
+// function mapStateToProps(state) {
+//   return {}
+// }
 
 export default App;
