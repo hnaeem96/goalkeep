@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { firebaseApp } from '../firebase';
 
+import '../styles/Navbar.css';
+
 class Navbar extends Component {
   signOut() {
     firebaseApp.auth().signOut();
@@ -14,12 +16,11 @@ class Navbar extends Component {
           <div className="menu-list">
             <span className="menu">
               <ul>
-                <a className="nav-a nav-home"><li>Home</li></a>
-                <a className="nav-a nav-about"><li>About</li></a>
-                <a className="nav-a nav-about" onClick={() => this.signOut()}><li>Log Out</li></a>
+                <a className="nav-a"><li>Home</li></a>
+                <a className="nav-a"><li>About</li></a>
+                <a className="nav-a" onClick={() => this.signOut()}><li>Log Out</li></a>
               </ul>
             </span>
-            <a className="mobile-menu"><img src="images/mobile-menu.svg" alt="Menu" /></a>
           </div>
         </div>
       </div>

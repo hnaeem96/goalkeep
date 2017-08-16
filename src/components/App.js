@@ -12,7 +12,6 @@ class App extends Component {
       <div>
         <Navbar />
         <div>
-          <h3>GoalKeep</h3>
           <AddGoal />
           <hr />
           <h4>List of Goals</h4>

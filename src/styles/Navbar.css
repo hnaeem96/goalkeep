@@ -1,16 +1,18 @@
-.navbar .container {
-  display: flex;
-  justify-content: space-between; }
-
-.navbar .logo {
-  display: flex;
-  align-items: center; }
-
-.navbar .menu-list {
-  display: flex;
-  align-items: center; }
-  .navbar .menu-list ul {
+.navbar {
+  background-color: #d90368;
+  color: #fff;
+  height: 60px; }
+  .navbar .container {
     display: flex;
-    justify-content: flex-end; }
-    .navbar .menu-list ul li {
-      padding: 0 2rem; }
+    justify-content: space-between; }
+  .navbar .logo {
+    display: flex;
+    align-items: center; }
+  .navbar .menu-list {
+    display: flex;
+    align-items: center; }
+    .navbar .menu-list ul {
+      display: flex;
+      justify-content: flex-end; }
+      .navbar .menu-list ul li {
+        padding: 0 2rem; }

@@ -1,0 +1,55 @@
+html {
+  height: 100%; }
+
+body {
+  background: url("../resources/images/main-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+h1 {
+  color: #fff; }
+
+h1 {
+  text-align: center; }
+
+h4 {
+  color: #820263; }
+
+.form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 450px;
+  text-align: center; }
+  .form .inner-form {
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 398px;
+    border: 2px solid #820263;
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 10px 10px 0 0; }
+  .form input {
+    border: 0;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    height: 3rem;
+    margin: 0 0 1.5rem;
+    padding: .5rem;
+    width: 100%;
+    border: 1px solid #820263;
+    border-radius: 5px; }
+  .form .btn {
+    cursor: pointer;
+    margin-bottom: 0;
+    height: 4.5rem;
+    width: 400px;
+    background-color: #820263;
+    color: #fff;
+    border-radius: 0 0 10px 10px; }
+  .form .sign-up-link {
+    font-size: 12px;
+    margin: 1rem; }
+    .form .sign-up-link a {
+      color: #820263; }

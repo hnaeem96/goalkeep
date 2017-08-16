@@ -1,4 +1,10 @@
+@import './variables.scss';
+
 .navbar {
+  background-color: $red;
+  color: $white;
+  height: 60px;
+
   .container {
     display: flex;
     justify-content: space-between;
