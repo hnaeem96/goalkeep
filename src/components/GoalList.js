@@ -19,15 +19,18 @@ class GoalList extends Component {
 
   render() {
     return (
-      <div>
-        {
-          this.props.goals.map((goal, index) => {
-            return (
-              <GoalItem key={index} goal={goal} />
-            )
-          })
-        }
-      </div>
+      <section className="goal-list">
+        <div className="container">
+          <h4>Goal List</h4>
+          {
+            this.props.goals.map((goal, index) => {
+              return (
+                <GoalItem key={index} goal={goal} />
+              )
+            })
+          }
+        </div>
+      </section>
     );
   }
 }
