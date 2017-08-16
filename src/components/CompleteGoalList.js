@@ -3,6 +3,8 @@ import { connect } from 'react-redux';
 import { setCompletedGoals } from '../actions';
 import { completeGoalRef } from '../firebase';
 
+import '../styles/GoalItem.css';
+
 class CompleteGoalList extends Component {
   componentDidMount() {
     completeGoalRef.on('value', snap => {
@@ -28,14 +30,15 @@ class CompleteGoalList extends Component {
             this.props.completedGoals.map((goal, index) => {
               const { title, email } = goal;
               return (
-                <div key={index}>
-                  <strong>{title}</strong> completed by <em>{email}</em>
+                <div key={index} className="goal-item">
+                  <span className="goal-title">{title}</span>
+                  <span><em>{email}</em></span>
                 </div>
               )
             })
           }
           <button
-            className="btn"
+            className="list-btn"
             onClick={() => this.clearCompleted()}
             >
             Clear

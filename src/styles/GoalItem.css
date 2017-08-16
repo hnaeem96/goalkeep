@@ -9,16 +9,32 @@
     padding-right: 1rem;
     width: 600px;
     text-align: left; }
-  .goal-item .unicode-btn {
-    margin-left: .5rem;
-    border-radius: 50%;
-    height: 30px;
-    width: 30px;
-    border: 0;
-    font-size: 1.2rem;
-    background-color: #1762ee;
-    color: #fff;
-    cursor: pointer;
-    transition: background-color 0.2s; }
-    .goal-item .unicode-btn:hover {
-      background-color: #1554c9; }
+
+.unicode-btn,
+.list-btn {
+  border: 0;
+  background-color: #1762ee;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.2s; }
+  .unicode-btn:hover,
+  .list-btn:hover {
+    background-color: #1554c9; }
+
+.unicode-btn {
+  font-size: 1.2em;
+  margin-left: .5rem;
+  border-radius: 50%;
+  height: 32px;
+  width: 32px; }
+
+.copy-btn {
+  line-height: 32px;
+  margin-left: 0; }
+
+.list-btn {
+  margin: 1rem;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  font-size: 1em;
+  font-weight: 300; }
