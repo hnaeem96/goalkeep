@@ -86,6 +86,32 @@ input {
   }
 }
 
+.error {
+  border-radius: 20px;
+  margin: .5rem;
+  padding: .5rem 0;
+  background: $red;
+  color: $white;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
 @media (max-width: 767px) {
   h1 {
     font-size: 4em;

@@ -1,0 +1,26 @@
+@import './variables.scss';
+
+.add-goal {
+  margin: 1rem;
+
+  .add-goal-input {
+    width: 75%;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: 0;
+  }
+
+  .btn {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left: 0;
+    background-color: $blue;
+    color: $white;
+    width: 25%;
+    transition: background-color $bg-trans;
+
+    &:hover {
+      background-color: $blue-hover;
+    }
+  }
+}

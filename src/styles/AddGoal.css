@@ -1,0 +1,17 @@
+.add-goal {
+  margin: 1rem; }
+  .add-goal .add-goal-input {
+    width: 75%;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: 0; }
+  .add-goal .btn {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left: 0;
+    background-color: #1762ee;
+    color: #fff;
+    width: 25%;
+    transition: background-color 0.2s; }
+    .add-goal .btn:hover {
+      background-color: #1554c9; }

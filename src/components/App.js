@@ -11,14 +11,8 @@ class App extends Component {
     return(
       <div>
         <Navbar />
-        <div>
-          <AddGoal />
-          <hr />
-          <h4>List of Goals</h4>
-          <GoalList />
-        </div>
-        <hr />
-        <h3>Completed Goals</h3>
+        <AddGoal />
+        <GoalList />
         <CompleteGoalList />
       </div>
     );

@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { goalRef } from '../firebase';
 
+import '../styles/AddGoal.css';
+
 class AddGoal extends Component {
   constructor(props) {
     super(props);
@@ -24,28 +26,31 @@ class AddGoal extends Component {
 
   render() {
     return (
-      <div className="form">
-        <div className="inner-form">
-          <input
-            className="add-goal"
-            type="text"
-            placeholder="Add a goal"
-            onChange={event => this.setState({title: event.target.value})}
-          />
-          <button
-            className="btn"
-            type="button"
-            onClick={() => this.addGoal()}
-          >
-              Submit
-            </button>
+      <section className="add-goal">
+        <div className="container">
+          <div className="form">
+            <div className="inner-form">
+              <input
+                className="add-goal-input"
+                type="text"
+                placeholder="Add a goal"
+                onChange={event => this.setState({title: event.target.value})}
+              />
+              <input
+                className="btn"
+                type="submit"
+                value="Add"
+                onClick={() => this.addGoal()}
+              />
+            </div>
+            {
+              this.state.error === 1 ?
+              <div className="error">Goal cannot be empty!</div> :
+              null
+            }
+          </div>
         </div>
-        {
-          this.state.error === 1 ?
-          <div>Goal cannot be empty!</div> :
-          null
-        }
-      </div>
+      </section>
     )
   }
 }

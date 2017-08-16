@@ -56,10 +56,3 @@
       .sign-up .form .sign-link a:active,
       .sign-up .form .sign-link a:visited {
         color: #1762ee; }
-    .sign-in .form .error,
-    .sign-up .form .error {
-      border-radius: 20px;
-      margin: .5rem;
-      padding: .5rem 0;
-      background: #f93737;
-      color: #fff; }
