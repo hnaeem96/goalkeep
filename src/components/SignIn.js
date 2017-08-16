@@ -29,7 +29,7 @@ class SignIn extends Component {
     return(
       <div>
         <section className="sign-in">
-          <h1>Goal Keep</h1>
+          <h1>GoalKeep, keep and seek goals.</h1>
           <div className="form">
             <div className="inner-form">
               <h4>Sign In</h4>

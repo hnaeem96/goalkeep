@@ -8,6 +8,7 @@
   left: 0; }
   .sign-in h1,
   .sign-up h1 {
+    font-size: 3em;
     color: #fff; }
   .sign-in h1,
   .sign-up h1 {
@@ -64,9 +65,6 @@
     .sign-up .form .sign-link {
       font-size: 12px;
       margin: 1rem; }
-      .sign-in .form .sign-link a,
-      .sign-up .form .sign-link a {
-        transition: color 0.2s; }
       .sign-in .form .sign-link a:link,
       .sign-in .form .sign-link a:active,
       .sign-in .form .sign-link a:visited,
@@ -74,9 +72,6 @@
       .sign-up .form .sign-link a:active,
       .sign-up .form .sign-link a:visited {
         color: #1762ee; }
-      .sign-in .form .sign-link a:hover,
-      .sign-up .form .sign-link a:hover {
-        color: #1554c9; }
     .sign-in .form .error,
     .sign-up .form .error {
       border-radius: 20px;

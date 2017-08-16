@@ -32,7 +32,7 @@ class SignUp extends Component {
     return(
       <div>
         <section className="sign-up">
-          <h1>Goal Keep</h1>
+          <h1>GoalKeep, keep and seek goals.</h1>
           <div className="form">
             <div className="inner-form">
               <h4>Sign Up</h4>
