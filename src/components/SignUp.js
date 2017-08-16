@@ -30,37 +30,38 @@ class SignUp extends Component {
 
   render() {
     return(
-      <div className="form">
+      <div>
         <h2>Sign Up</h2>
-        <div className="inner-form">
+        <form className="form">
+          <div className="inner-form">
+            <input
+              className="email"
+              type="email"
+              placeholder="Email"
+              onChange={event => this.setState({email: event.target.value})}
+            />
+            <input
+              className="password"
+              type="password"
+              placeholder="Password"
+              onChange={event => this.setState({password: event.target.value})}
+            />
+            <input
+              className="password"
+              type="password"
+              placeholder="Confirm Password"
+              onChange={event => this.setState({confirmPassword: event.target.value})}
+            />
+          </div>
+          <div><Link to={'/signin'}>Alresd have an account? Click here to sign in</Link></div>
           <input
-            className="email"
-            type="email"
-            placeholder="Email"
-            onChange={event => this.setState({email: event.target.value})}
+            className="sign-up-btn"
+            type="submit"
+            value="Create Account"
+            onClick={() => this.signUp()}
           />
-          <input
-            className="password"
-            type="password"
-            placeholder="Password"
-            onChange={event => this.setState({password: event.target.value})}
-          />
-          <input
-            className="password"
-            type="password"
-            placeholder="Confirm Password"
-            onChange={event => this.setState({confirmPassword: event.target.value})}
-          />
-        </div>
-        <button
-          className="sign-up-btn"
-          type="submit"
-          onClick={() => this.signUp()}
-        >
-          Sign Up
-        </button>
+        </form>
         <div>{this.state.error}</div>
-        <div><Link to={'/signin'}>Alresd have an account? Click here to sign in</Link></div>
       </div>
     );
   }

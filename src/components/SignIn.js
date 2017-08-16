@@ -29,7 +29,7 @@ class SignIn extends Component {
     return(
       <div>
         <h1>Goal Keep</h1>
-        <form className="form">
+        <div className="form">
           <div className="inner-form">
             <h4>Sign In</h4>
             <input
@@ -53,7 +53,7 @@ class SignIn extends Component {
             onClick={() => this.signIn()}
           />
           <div>{this.state.error}</div>
-        </form>
+        </div>
       </div>
     );
   }
