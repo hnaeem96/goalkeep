@@ -1,74 +1,82 @@
 @import './variables.scss';
 
-html {
-  height: 100%;
-}
-
-body {
-  // background-color: $red;
+.sign-in,
+.sign-up {
   background: url('../resources/images/main-background.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-}
-
-h1 {
-  color: $white;
-}
-
-h1 {
-  text-align: center;
-}
-
-h4 {
-  color: $dark-red;
-}
-
-.form {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 450px;
-  text-align: center;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
 
-  .inner-form {
-    background-color: rgba(255, 255, 255, 0.9);
-    width: 398px;
-    border: 2px solid $dark-red;
-    margin: 0 auto;
-    padding: 1rem;
-    border-radius: 10px 10px 0 0;
-  }
-
-  input {
-    border: 0;
-    font-family: $font-family;
-    font-size: $base-font-size;
-    height: 3rem;
-    margin: 0 0 1.5rem;
-    padding: .5rem;
-    width: 100%;
-    border: 1px solid $dark-red;
-    border-radius: 5px;
-  }
-
-  .btn {
-    cursor: pointer;
-    margin-bottom: 0;
-    height: 4.5rem;
-    width: 400px;
-    background-color: $dark-red;
+  h1 {
     color: $white;
-    border-radius: 0 0 10px 10px;
   }
 
-  .sign-up-link {
-    font-size: 12px;
-    margin: 1rem;
+  h1 {
+    text-align: center;
+  }
 
-    a {
-      color: $dark-red;
+  h4 {
+    color: $dark-red;
+  }
+
+  .form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    text-align: center;
+
+    .inner-form {
+      background-color: rgba(255, 255, 255, 0.9);
+      width: 398px;
+      border: 2px solid $dark-red;
+      margin: 0 auto;
+      padding: 1rem;
+      border-radius: 10px 10px 0 0;
+    }
+
+    input {
+      border: 0;
+      font-family: $font-family;
+      font-size: $base-font-size;
+      height: 3rem;
+      margin: 0 0 1.5rem;
+      padding: .5rem;
+      width: 100%;
+      border: 1px solid $dark-red;
+      border-radius: 5px;
+    }
+
+    .btn {
+      cursor: pointer;
+      margin-bottom: 0;
+      height: 4.5rem;
+      width: 400px;
+      background-color: $dark-red;
+      color: $white;
+      border-radius: 0 0 10px 10px;
+    }
+
+    .sign-link {
+      font-size: 12px;
+      margin: 1rem;
+
+      a {
+        color: $dark-red;
+      }
+    }
+
+    .error {
+      margin: 1rem;
+      padding: .5rem;
+      background: $red;
+      color: $white;
     }
   }
 }

@@ -31,37 +31,42 @@ class SignUp extends Component {
   render() {
     return(
       <div>
-        <h2>Sign Up</h2>
-        <form className="form">
-          <div className="inner-form">
+        <section className="sign-up">
+          <h1>Goal Keep</h1>
+          <div className="form">
+            <div className="inner-form">
+              <h4>Sign Up</h4>
+              <input
+                className="email"
+                type="email"
+                placeholder="Email"
+                onChange={event => this.setState({email: event.target.value})}
+              />
+              <input
+                className="password"
+                type="password"
+                placeholder="Password"
+                onChange={event => this.setState({password: event.target.value})}
+              />
+              <input
+                className="password"
+                type="password"
+                placeholder="Confirm Password"
+                onChange={event => this.setState({confirmPassword: event.target.value})}
+              />
+              {
+                this.state.error !== '' ? <div className="error">{this.state.error}</div> : null
+              }
+              <div className="sign-link"><Link to={'/signin'}>Already have an account? Click here to sign in</Link></div>
+            </div>
             <input
-              className="email"
-              type="email"
-              placeholder="Email"
-              onChange={event => this.setState({email: event.target.value})}
-            />
-            <input
-              className="password"
-              type="password"
-              placeholder="Password"
-              onChange={event => this.setState({password: event.target.value})}
-            />
-            <input
-              className="password"
-              type="password"
-              placeholder="Confirm Password"
-              onChange={event => this.setState({confirmPassword: event.target.value})}
+              className="btn"
+              type="submit"
+              value="Create Account"
+              onClick={() => this.signUp()}
             />
           </div>
-          <div><Link to={'/signin'}>Alresd have an account? Click here to sign in</Link></div>
-          <input
-            className="sign-up-btn"
-            type="submit"
-            value="Create Account"
-            onClick={() => this.signUp()}
-          />
-        </form>
-        <div>{this.state.error}</div>
+        </section>
       </div>
     );
   }

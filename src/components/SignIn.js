@@ -28,32 +28,36 @@ class SignIn extends Component {
   render() {
     return(
       <div>
-        <h1>Goal Keep</h1>
-        <div className="form">
-          <div className="inner-form">
-            <h4>Sign In</h4>
+        <section className="sign-in">
+          <h1>Goal Keep</h1>
+          <div className="form">
+            <div className="inner-form">
+              <h4>Sign In</h4>
+              <input
+                className="email"
+                type="email"
+                placeholder="Email"
+                onChange={event => this.setState({email: event.target.value})}
+              />
+              <input
+                className="password"
+                type="password"
+                placeholder="Password"
+                onChange={event => this.setState({password: event.target.value})}
+              />
+              {
+                this.state.error !== '' ? <div className="error">{this.state.error}</div> : null
+              }
+              <div className="sign-link"><Link to={'/signup'}>Don't have an account? Click here to sign up</Link></div>
+            </div>
             <input
-              className="email"
-              type="email"
-              placeholder="Email"
-              onChange={event => this.setState({email: event.target.value})}
+              className="btn"
+              type="submit"
+              value="Enter"
+              onClick={() => this.signIn()}
             />
-            <input
-              className="password"
-              type="password"
-              placeholder="Password"
-              onChange={event => this.setState({password: event.target.value})}
-            />
-            <div className="sign-up-link"><Link to={'/signup'}>Don't have an account? Click here to sign up</Link></div>
           </div>
-          <input
-            className="btn"
-            type="submit"
-            value="Enter"
-            onClick={() => this.signIn()}
-          />
-          <div>{this.state.error}</div>
-        </div>
+        </section>
       </div>
     );
   }
