@@ -24,6 +24,7 @@ class AddGoal extends Component {
     }
 
     this.refs.goal.value = '';
+    this.setState({title: ''});
   }
 
   render() {
