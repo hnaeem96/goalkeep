@@ -1,0 +1,33 @@
+@import './variables.scss';
+
+.goal-item {
+  background-color: $light-blue;
+  padding: .5rem;
+  margin: .5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .goal-title {
+    padding-right: 1rem;
+    width: 600px;
+    text-align: left;
+  }
+
+  .unicode-btn {
+    margin-left: .5rem;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    border: 0;
+    font-size: 1.2rem;
+    background-color: $blue;
+    color: $white;
+    cursor: pointer;
+    transition: background-color $bg-trans;
+
+    &:hover {
+      background-color: $blue-hover;
+    }
+  }
+}

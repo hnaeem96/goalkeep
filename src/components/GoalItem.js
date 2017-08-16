@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { goalRef, completeGoalRef, deleteGoalRef } from '../firebase';
 
+import '../styles/GoalItem.css';
+
 class GoalItem extends Component {
   constructor(props) {
     super(props);
@@ -32,35 +34,33 @@ class GoalItem extends Component {
     const { email, title } = this.props.goal;
 
     return (
-      <div>
-        <strong>{title}</strong>
-        <span>made by <em>{email}</em></span>
-        <button>Like</button>
-        <span>{}</span>
+      <div className="goal-item">
+        <span className="goal-title">{title}</span>
+        <span><em>{email}</em></span>
         {
           (email === this.props.user.email) ?
-          <div>
+          <span>
             <button
-              className="btn"
+              className="unicode-btn"
               onClick={() => this.completeGoal()}
             >
-                Complete
+                &#10003;
             </button>
             <button
-              className="btn"
+              className="unicode-btn"
               onClick={() => this.deleteGoal()}
             >
-                Delete
+                &#10005;
             </button>
-          </div> :
-          <div>
+          </span> :
+          <span>
             <button
               className="btn"
               onClick={() => this.copyGoal()}
             >
                   Copy Goal
             </button>
-          </div>
+          </span>
         }
       </div>
     )
