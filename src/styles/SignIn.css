@@ -31,22 +31,6 @@
       margin: 0 auto;
       padding: 1rem;
       border-radius: 10px 10px 0 0; }
-    .sign-in .form input,
-    .sign-up .form input {
-      border: 0;
-      font-family: "Roboto", sans-serif;
-      font-size: 16px;
-      height: 3rem;
-      margin: 0 0 1.5rem;
-      padding: .5rem;
-      width: 100%;
-      border: 1px solid #d6ddee;
-      border-radius: 20px;
-      color: #1762ee; }
-      .sign-in .form input:focus,
-      .sign-up .form input:focus {
-        outline: none;
-        border: 0.5px solid #1762ee; }
     .sign-in .form .btn,
     .sign-up .form .btn {
       border: 0;

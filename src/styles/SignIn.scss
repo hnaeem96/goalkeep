@@ -38,23 +38,23 @@
       border-radius: 10px 10px 0 0;
     }
 
-    input {
-      border: 0;
-      font-family: $font-family;
-      font-size: $base-font-size;
-      height: 3rem;
-      margin: 0 0 1.5rem;
-      padding: .5rem;
-      width: 100%;
-      border: 1px solid $light-blue;
-      border-radius: 20px;
-      color: $blue;
-
-      &:focus {
-        outline: none;
-        border: .5px solid $blue;
-      }
-    }
+    // input {
+    //   border: 0;
+    //   font-family: $font-family;
+    //   font-size: $base-font-size;
+    //   height: 3rem;
+    //   margin: 0 0 1.5rem;
+    //   padding: .5rem;
+    //   width: 100%;
+    //   border: 1px solid $light-blue;
+    //   border-radius: 20px;
+    //   color: $blue;
+    //
+    //   &:focus {
+    //     outline: none;
+    //     border: .5px solid $blue;
+    //   }
+    // }
 
     .btn {
       border: 0;
