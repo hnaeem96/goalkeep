@@ -2,10 +2,7 @@
 
 .sign-in,
 .sign-up {
-  background: url('../resources/images/main-background.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background: $dark-blue;
   position: absolute;
   height: 100%;
   width: 100%;
@@ -21,7 +18,7 @@
   }
 
   h4 {
-    color: $dark-red;
+    color: $blue;
   }
 
   .form {
@@ -33,9 +30,8 @@
     text-align: center;
 
     .inner-form {
-      background-color: rgba(255, 255, 255, 0.9);
-      width: 398px;
-      border: 2px solid $dark-red;
+      background-color: #fff;
+      width: 400px;
       margin: 0 auto;
       padding: 1rem;
       border-radius: 10px 10px 0 0;
@@ -49,18 +45,30 @@
       margin: 0 0 1.5rem;
       padding: .5rem;
       width: 100%;
-      border: 1px solid $dark-red;
-      border-radius: 5px;
+      border: 1px solid $light-blue;
+      border-radius: 20px;
+      color: $blue;
+
+      &:focus {
+        outline: none;
+        border: .5px solid $blue;
+      }
     }
 
     .btn {
+      border: 0;
       cursor: pointer;
       margin-bottom: 0;
       height: 4.5rem;
       width: 400px;
-      background-color: $dark-red;
+      background-color: $blue;
       color: $white;
       border-radius: 0 0 10px 10px;
+      transition: background-color $bg-trans;
+
+      &:hover {
+        background-color: $blue-hover;
+      }
     }
 
     .sign-link {
@@ -68,13 +76,24 @@
       margin: 1rem;
 
       a {
-        color: $dark-red;
+        transition: color $bg-trans;
+      }
+
+      a:link,
+      a:active,
+      a:visited {
+        color: $blue;
+      }
+
+      a:hover {
+        color: $blue-hover;
       }
     }
 
     .error {
-      margin: 1rem;
-      padding: .5rem;
+      border-radius: 20px;
+      margin: .5rem;
+      padding: .5rem 0;
       background: $red;
       color: $white;
     }

@@ -1,9 +1,6 @@
 .sign-in,
 .sign-up {
-  background: url("../resources/images/main-background.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background: #2b2c4e;
   position: absolute;
   height: 100%;
   width: 100%;
@@ -17,7 +14,7 @@
     text-align: center; }
   .sign-in h4,
   .sign-up h4 {
-    color: #820263; }
+    color: #1762ee; }
   .sign-in .form,
   .sign-up .form {
     position: absolute;
@@ -28,9 +25,8 @@
     text-align: center; }
     .sign-in .form .inner-form,
     .sign-up .form .inner-form {
-      background-color: rgba(255, 255, 255, 0.9);
-      width: 398px;
-      border: 2px solid #820263;
+      background-color: #fff;
+      width: 400px;
       margin: 0 auto;
       padding: 1rem;
       border-radius: 10px 10px 0 0; }
@@ -43,27 +39,48 @@
       margin: 0 0 1.5rem;
       padding: .5rem;
       width: 100%;
-      border: 1px solid #820263;
-      border-radius: 5px; }
+      border: 1px solid #d6ddee;
+      border-radius: 20px;
+      color: #1762ee; }
+      .sign-in .form input:focus,
+      .sign-up .form input:focus {
+        outline: none;
+        border: 0.5px solid #1762ee; }
     .sign-in .form .btn,
     .sign-up .form .btn {
+      border: 0;
       cursor: pointer;
       margin-bottom: 0;
       height: 4.5rem;
       width: 400px;
-      background-color: #820263;
+      background-color: #1762ee;
       color: #fff;
-      border-radius: 0 0 10px 10px; }
+      border-radius: 0 0 10px 10px;
+      transition: background-color 0.2s; }
+      .sign-in .form .btn:hover,
+      .sign-up .form .btn:hover {
+        background-color: #1554c9; }
     .sign-in .form .sign-link,
     .sign-up .form .sign-link {
       font-size: 12px;
       margin: 1rem; }
       .sign-in .form .sign-link a,
       .sign-up .form .sign-link a {
-        color: #820263; }
+        transition: color 0.2s; }
+      .sign-in .form .sign-link a:link,
+      .sign-in .form .sign-link a:active,
+      .sign-in .form .sign-link a:visited,
+      .sign-up .form .sign-link a:link,
+      .sign-up .form .sign-link a:active,
+      .sign-up .form .sign-link a:visited {
+        color: #1762ee; }
+      .sign-in .form .sign-link a:hover,
+      .sign-up .form .sign-link a:hover {
+        color: #1554c9; }
     .sign-in .form .error,
     .sign-up .form .error {
-      margin: 1rem;
-      padding: .5rem;
-      background: #d90368;
+      border-radius: 20px;
+      margin: .5rem;
+      padding: .5rem 0;
+      background: #f93737;
       color: #fff; }
