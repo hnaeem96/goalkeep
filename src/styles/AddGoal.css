@@ -15,3 +15,5 @@
     transition: background-color 0.2s; }
     .add-goal .btn:hover {
       background-color: #1554c9; }
+  .add-goal .error {
+    padding: .25rem 1rem; }

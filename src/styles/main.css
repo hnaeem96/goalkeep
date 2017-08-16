@@ -74,6 +74,9 @@ input {
   background: #f93737;
   color: #fff; }
 
+.btn {
+  cursor: pointer; }
+
 @media (min-width: 768px) {
   .container {
     width: 750px; } }

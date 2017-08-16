@@ -22,6 +22,8 @@ class AddGoal extends Component {
     } else {
       this.setState({error: 1});
     }
+
+    this.refs.goal.value = '';
   }
 
   render() {
@@ -31,6 +33,7 @@ class AddGoal extends Component {
           <div className="form">
             <div className="inner-form">
               <input
+                ref="goal"
                 className="add-goal-input"
                 type="text"
                 placeholder="Add a goal"
@@ -45,7 +48,7 @@ class AddGoal extends Component {
             </div>
             {
               this.state.error === 1 ?
-              <div className="error">Goal cannot be empty!</div> :
+              <span className="error">Goal cannot be empty!</span> :
               null
             }
           </div>
