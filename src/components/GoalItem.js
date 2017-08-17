@@ -41,13 +41,13 @@ class GoalItem extends Component {
           (email === this.props.user.email) ?
           <span>
             <button
-              className="unicode-btn"
+              className="unicode-btn complete"
               onClick={() => this.completeGoal()}
             >
                 &#10003;
             </button>
             <button
-              className="unicode-btn"
+              className="unicode-btn delete"
               onClick={() => this.deleteGoal()}
             >
                 &#10005;

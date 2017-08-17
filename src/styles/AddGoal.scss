@@ -8,19 +8,21 @@
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
     border-right: 0;
+    margin-bottom: 0;
   }
 
   .btn {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     border-left: 0;
-    background-color: $blue;
+    background-color: $green;
     color: $white;
     width: 25%;
     transition: background-color $bg-trans;
+    margin-bottom: 0;
 
     &:hover {
-      background-color: $blue-hover;
+      background-color: $green-hover;
     }
   }
 

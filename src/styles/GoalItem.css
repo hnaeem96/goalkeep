@@ -1,3 +1,6 @@
+.goal-list {
+  margin-bottom: 3rem; }
+
 .goal-item {
   background-color: #d6ddee;
   padding: .5rem;
@@ -13,13 +16,9 @@
 .unicode-btn,
 .list-btn {
   border: 0;
-  background-color: #1762ee;
   color: #fff;
   cursor: pointer;
   transition: background-color 0.2s; }
-  .unicode-btn:hover,
-  .list-btn:hover {
-    background-color: #1554c9; }
 
 .unicode-btn {
   font-size: 1.2em;
@@ -28,13 +27,30 @@
   height: 32px;
   width: 32px; }
 
+.complete {
+  background-color: #58d6a1; }
+  .complete:hover {
+    background-color: #42ad80; }
+
+.delete {
+  background-color: #f93737; }
+  .delete:hover {
+    background-color: #c13636; }
+
 .copy-btn {
+  background-color: #1762ee;
+  color: #1762ee;
   line-height: 32px;
   margin-left: 0; }
+  .copy-btn:hover {
+    background-color: #1554c9; }
 
 .list-btn {
   margin: 1rem;
   padding: 1rem 2rem;
   border-radius: 5px;
   font-size: 1em;
-  font-weight: 300; }
+  font-weight: 300;
+  background-color: #1762ee; }
+  .list-btn:hover {
+    background-color: #1554c9; }

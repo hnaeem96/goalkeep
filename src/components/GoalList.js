@@ -4,6 +4,8 @@ import { goalRef } from '../firebase';
 import { setGoals } from '../actions';
 import GoalItem from './GoalItem';
 
+import '../styles/GoalItem.css';
+
 class GoalList extends Component {
   componentDidMount() {
     goalRef.on('value', snap => {

@@ -6,12 +6,15 @@ import AddGoal from './AddGoal';
 import GoalList from './GoalList';
 import CompleteGoalList from './CompleteGoalList';
 
+import '../styles/App.css';
+
 class App extends Component {
   render() {
     return(
-      <div>
+      <div className="main-app">
         <Navbar />
         <AddGoal />
+        <hr />
         <GoalList />
         <CompleteGoalList />
       </div>

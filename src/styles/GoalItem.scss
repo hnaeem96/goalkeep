@@ -1,5 +1,9 @@
 @import './variables.scss';
 
+.goal-list {
+  margin-bottom: 3rem;
+}
+
 .goal-item {
   background-color: $light-blue;
   padding: .5rem;
@@ -18,14 +22,9 @@
 .unicode-btn,
 .list-btn {
   border: 0;
-  background-color: $blue;
   color: $white;
   cursor: pointer;
   transition: background-color $bg-trans;
-
-  &:hover {
-    background-color: $blue-hover;
-  }
 }
 
 .unicode-btn {
@@ -36,9 +35,31 @@
   width: 32px;
 }
 
+.complete {
+  background-color: $green;
+
+  &:hover {
+    background-color: $green-hover;
+  }
+}
+
+.delete {
+  background-color: $red;
+
+  &:hover {
+    background-color: $red-hover;
+  }
+}
+
 .copy-btn {
+  background-color: $blue;
+  color: $blue;
   line-height: 32px;
   margin-left: 0;
+
+  &:hover {
+    background-color: $blue-hover;
+  }
 }
 
 .list-btn {
@@ -47,4 +68,9 @@
   border-radius: 5px;
   font-size: 1em;
   font-weight: $font-weight-normal;
+  background-color: $blue;
+
+  &:hover {
+    background-color: $blue-hover;
+  }
 }
