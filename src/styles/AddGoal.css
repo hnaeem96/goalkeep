@@ -20,4 +20,5 @@
       background-color: #42ad80;
       border-color: #42ad80; }
   .add-goal .error {
-    padding: .25rem 1rem; }
+    padding: .25rem 1rem;
+    margin: 1rem; }
