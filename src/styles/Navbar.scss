@@ -29,4 +29,15 @@
       }
     }
   }
+
+  a:active,
+  a:link,
+  a:visited {
+    color: $white;
+    transition: color $bg-trans;
+  }
+
+  a:hover {
+    color: $light-blue;
+  }
 }

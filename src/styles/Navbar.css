@@ -129,3 +129,10 @@ input {
       justify-content: flex-end; }
       .navbar .menu-list ul li {
         padding: 0 2rem; }
+  .navbar a:active,
+  .navbar a:link,
+  .navbar a:visited {
+    color: #fff;
+    transition: color 0.2s; }
+  .navbar a:hover {
+    color: #d6ddee; }

@@ -16,8 +16,7 @@ class Navbar extends Component {
           <div className="menu-list">
             <span className="menu">
               <ul>
-                <a className="nav-a"><li>Home</li></a>
-                <a className="nav-a"><li>About</li></a>
+                <a className="nav-a" target="_blank" rel="noopener noreferrer" href="http://hassannaeem.nyc"><li>About Me</li></a>
                 <a className="nav-a" onClick={() => this.signOut()}><li>Log Out</li></a>
               </ul>
             </span>

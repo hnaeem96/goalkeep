@@ -14,15 +14,17 @@
   .btn {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
+    border: .5px solid $green;
     border-left: 0;
     background-color: $green;
     color: $white;
     width: 25%;
-    transition: background-color $bg-trans;
+    transition: background-color $bg-trans, border-color $bg-trans;
     margin-bottom: 0;
 
     &:hover {
       background-color: $green-hover;
+      border-color: $green-hover;
     }
   }
 
