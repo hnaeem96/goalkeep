@@ -8,10 +8,14 @@
   display: flex;
   align-items: center;
   justify-content: space-between; }
-  .goal-item .goal-title {
-    padding-right: 1rem;
-    width: 600px;
+  .goal-item .title-row {
     text-align: left; }
+  .goal-item .button-row {
+    text-align: right; }
+
+.goal-email {
+  font-size: .8em;
+  opacity: .8; }
 
 .unicode-btn,
 .list-btn {
@@ -27,6 +31,8 @@
   border-radius: 50%;
   height: 32px;
   width: 32px; }
+  .unicode-btn:first-child {
+    margin-left: 1rem; }
   .unicode-btn:hover .tooltip {
     visibility: visible; }
   .unicode-btn:focus {
@@ -45,8 +51,7 @@
 .copy-btn {
   background-color: #1762ee;
   color: #1762ee;
-  line-height: 32px;
-  margin-left: 0; }
+  line-height: 32px; }
   .copy-btn:hover {
     background-color: #1554c9; }
 

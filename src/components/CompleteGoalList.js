@@ -32,7 +32,7 @@ class CompleteGoalList extends Component {
               return (
                 <div key={index} className="goal-item">
                   <span className="goal-title">{title}</span>
-                  <span><em>{email}</em></span>
+                  <span className="goal-email"><em>{email}</em></span>
                 </div>
               )
             })

@@ -12,11 +12,18 @@
   align-items: center;
   justify-content: space-between;
 
-  .goal-title {
-    padding-right: 1rem;
-    width: 600px;
+  .title-row {
     text-align: left;
   }
+
+  .button-row {
+    text-align: right;
+  }
+}
+
+.goal-email {
+  font-size: .8em;
+  opacity: .8;
 }
 
 .unicode-btn,
@@ -34,6 +41,10 @@
   border-radius: 50%;
   height: 32px;
   width: 32px;
+
+  &:first-child {
+    margin-left: 1rem;
+  }
 
   &:hover .tooltip {
     visibility: visible;
@@ -64,7 +75,6 @@
   background-color: $blue;
   color: $blue;
   line-height: 32px;
-  margin-left: 0;
 
   &:hover {
     background-color: $blue-hover;
