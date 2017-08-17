@@ -29,6 +29,8 @@
   width: 32px; }
   .unicode-btn:hover .tooltip {
     visibility: visible; }
+  .unicode-btn:focus {
+    outline: none; }
 
 .complete {
   background-color: #58d6a1; }
@@ -72,3 +74,5 @@
   margin-left: -50px;
   z-index: 1;
   font-size: .8em; }
+  .tooltip:focus {
+    outline: none; }

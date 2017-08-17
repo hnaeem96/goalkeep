@@ -38,6 +38,10 @@
   &:hover .tooltip {
     visibility: visible;
   }
+
+  &:focus {
+    outline: none;
+  }
 }
 
 .complete {
@@ -94,4 +98,8 @@
     margin-left: -50px;
     z-index: 1;
     font-size: .8em;
+
+    &:focus {
+      outline: none;
+    }
 }

@@ -16,6 +16,7 @@ class App extends Component {
         <AddGoal />
         <hr />
         <GoalList />
+        <hr className="goal-divider" />
         <CompleteGoalList />
       </div>
     );
